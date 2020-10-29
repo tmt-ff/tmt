@@ -1,0 +1,213 @@
+<nav class="navbar row smart-scroll navbar-expand-lg navbar-dark">
+  <div class="row">
+    <a
+      class="navbar-brand col-lg-5 col-xl-5 ml-5 col-md-4 col-sm-2 col-2"
+      routerLink="/home"
+    >
+      <span class="header__name">Deloitte</span>
+      <span class="header__greenText"> TMT Factory</span></a
+    >
+    <!-- <img
+      src="../../assets/icons/logo.png"
+      class="logo d-none d-block d-sm-none d-sm-block d-md-none d-md-block d-lg-none"
+      alt="..."
+    /> -->
+  </div>
+
+  <button
+    class="navbar-toggler collapsed"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <svg
+      width="22"
+      height="17"
+      viewBox="0 0 22 17"
+      fill="none"
+      class="hamburger-icon"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M21 1H1"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+      <path
+        d="M21 8.06482H6"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+      <path
+        d="M21 15.1296H11"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+    </svg>
+
+    <svg
+      width="32"
+      height="18"
+      viewBox="0 0 32 18"
+      class="close-icon"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9.12096 1.75807L15.5348 8.17192C15.9253 8.56245 15.9253 9.19561 15.5348 9.58614L9.12096 16"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+      <path
+        d="M23.121 16L16.7071 9.58614C16.3166 9.19561 16.3166 8.56245 16.7071 8.17192L23.121 1.75807"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+    </svg>
+  </button>
+  <div
+    class="collapse navbar-collapse justify-content-end navManu"
+    id="navbarNav"
+  >
+    <ul class="navbar-nav header__nav-list">
+      <!-- <li class="nav-item active">
+        <a class="nav-link" routerLink="/"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="linkActive" routerLink="/about_us"
+          >About Us</a
+        >
+        <!-- <hr class="d-none d-lg-block d-xl-block" /> -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="linkActive" routerLink="/insights"
+          >Golden Threads</a
+        >
+        <!-- <hr class="d-none d-lg-block d-xl-block" /> -->
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          routerLinkActive="linkActive"
+          routerLink="/solutions/vpop"
+          [ngClass]="{'show' : show}"
+          >Solutions
+          <img
+            [ngClass]="{'show' : show}"
+            class="expand-icon"
+            src="../../assets/icons/expand-icon.svg"
+            alt="..."
+          />
+          <img
+            *ngIf="show"
+            class="collapse-icon"
+            src="../../assets/icons/collapse-icon.svg"
+            alt="..."
+          />
+        </a>
+
+         <hr class="d-none d-lg-block d-xl-block" />
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/solutions/vpop">V-PoP</a>
+          <a class="dropdown-item" routerLink="/solutions/api">API</a>
+          <a class="dropdown-item" routerLink="/solutions/botdna">BOT DNA</a>
+          <a class="dropdown-item" routerLink="/solutions/channel"
+            >Channel Transformation</a
+          >
+          <a class="dropdown-item" routerLink="/solutions/smartcapex"
+            >Smart CAPEX</a
+          >
+          <a class="dropdown-item" routerLink="/solutions/cyper_security"
+            >Cyber Security</a
+          >
+          <a class="dropdown-item" routerLink="/solutions/aona">AONA</a>
+        </div>
+       <!--  "router.isActive('second', true) === true -->
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLinkActive="linkActive"
+          routerLink="/contact_us"
+          >Contact Us</a
+        >
+        <!-- <hr class="d-none d-lg-block d-xl-block" /> -->
+      </li>
+
+      <!-- <li class="nav-item" routerLink="/">
+        <a class="nav-link" routerLink="/">Our Partners</a>
+      </li> -->
+
+      <!-- <li class="nav-item" routerLink="/">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li> -->
+    </ul>
+  </div>
+</nav>
+<div
+  *ngIf="isActive == true"
+  class="row solutionNav"
+  #stickyMenu
+  [class.sticky]="sticky"
+>
+  <a class="col disabled subNav"></a>
+  <a
+    routerLink="/solutions/vpop"
+    routerLinkActive="sublinkActive"
+    class="col subNav"
+    ><span class="centersubNavText">V-POP</span></a
+  >
+  <a
+    routerLink="/solutions/api"
+    routerLinkActive="sublinkActive"
+    class="col subNav"
+    ><span class="centersubNavText">API</span></a
+  >
+  <a
+    routerLink="/solutions/botdna"
+    routerLinkActive="sublinkActive"
+    class="col subNav"
+    ><span class="centersubNavText">BOT DNA</span></a
+  >
+  <a
+    routerLink="/solutions/channel"
+    routerLinkActive="sublinkActive"
+    class="col subNav"
+    ><span class="centersubNavText">Channel Transformation</span></a
+  >
+  <a
+    routerLink="/solutions/smartcapex"
+    routerLinkActive="sublinkActive"
+    class="col subNav"
+    ><span class="centersubNavText">Smart CAPEX</span></a
+  >
+  <a
+    routerLink="/solutions/cyper_security"
+    routerLinkActive="sublinkActive"
+    class="col subNav"
+    ><span class="centersubNavText">Cyber Security</span></a
+  >
+  <a
+    routerLink="/solutions/aona"
+    routerLinkActive="sublinkActive"
+    class="col subNav"
+    ><span class="centersubNavText">AONA</span></a
+  >
+  <a class="col disabled subNav"></a>
+</div>

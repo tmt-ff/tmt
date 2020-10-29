@@ -1,0 +1,270 @@
+@import "../../assets/scss/common";
+
+.botdna {
+  // img {
+  //   display: block;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   width: 50%;
+  // }
+  &__hero {
+    // margin-top: 48px !important;
+    background-image: url("../../assets/images/botdna.jpg");
+    -webkit-background-size: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+
+    height: calc(100vh);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    overflow: auto;
+
+    &__hero-text-section {
+      &__title {
+        @include sbfont($h1, $white);
+      }
+      &__desc {
+        @include sbfont($h1, $white);
+        font-family: "OpenSansRegular" !important;
+      }
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 992px) {
+    &__hero {
+      height: 581px;
+    }
+  }
+  &__business-problem {
+    background-image: url("../../assets/images/Rectangle\ 143.png");
+
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: bottom !important;
+    background-color: $white;
+    max-width: 100%;
+    height: auto;
+    // height: calc(100vh);
+
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    overflow: auto;
+
+    &__img-Section {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    &__business-text-section {
+      padding-top: 7%;
+      padding-bottom: 7%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      &__business-header {
+        @include sbfont($h2, $color-secondary-19);
+      }
+
+      &__business-desc {
+        @include sbfont($h7, $color-secondary-15);
+        font-size: 20px !important;
+      }
+      &__keyList {
+        @include sbfont($h6, $color-primary-4);
+        font-size: 20px !important;
+      }
+      &__desc-list {
+        position: relative;
+        left: 28%;
+        text-align: left;
+        @include sbfont($h5, $color-secondary-34);
+      }
+    }
+  }
+
+  &__business-problem :after {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(
+      180deg,
+      #fdfdfd 36.7%,
+      rgba(249, 249, 249, 0) 87.77%
+    );
+  }
+
+  // &__benefits {
+  //   background: #1a1d2b;
+  //   transform: rotate(180deg);
+  //   height: 400px;
+  // }
+
+  input[type="email"],
+  select.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 0.5px solid #0d0f0e;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    width: 283px;
+  }
+
+  .form-control {
+    padding: 0 !important;
+  }
+
+  input[type="email"]:focus,
+  select.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: blue($color: #12abe7);
+  }
+}
+.videoSection {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  height: auto;
+  z-index: 0 !important;
+  .textBackground {
+    background-color: $color-secondary-24;
+    height: 513px;
+    width: 87%;
+    margin: 198px 120px auto 46px;
+
+    // z-index: 1 !important;
+    position: absolute;
+    .textArea {
+      z-index: 1 !important;
+      position: absolute;
+      margin-top: 5%;
+      width: 40%;
+    }
+
+    @media (min-width: 375px) and (max-width: 991px) {
+      .textArea {
+        width: 95%;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 5%;
+      }
+    }
+    &__title {
+      @include sbfont($h3, $white);
+    }
+    &__desc {
+      @include sbfont($h7, $white);
+    }
+
+    &__blueDots {
+      z-index: 2 !important;
+      position: relative;
+      top: 10%;
+      animation-name: bluedots;
+      animation-duration: 2s;
+      animation-delay: 2s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes bluedots {
+      0% {
+        left: -7%;
+      }
+      25% {
+        left: -13%;
+      }
+      50% {
+        left: -19%;
+      }
+      75% {
+        left: -24%;
+      }
+      100% {
+        left: -30%;
+      }
+    }
+
+    &__purpleDots {
+      z-index: 2 !important;
+      position: relative;
+      margin-left: -1%;
+      top: 70%;
+      animation-name: purpuledots;
+      animation-duration: 2s;
+      animation-delay: 2s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+      overflow: hidden;
+    }
+
+    @keyframes purpuledots {
+      0% {
+        right: -1%;
+      }
+      25% {
+        right: -6%;
+      }
+      50% {
+        right: -9%;
+      }
+      75% {
+        right: -13%;
+      }
+      100% {
+        right: -17%;
+      }
+    }
+
+    &__master-madia {
+      z-index: 1 !important;
+      position: relative;
+      bottom: 13%;
+      margin-left: -4%;
+      overflow: hidden;
+    }
+
+    @media (min-width: 375px) and (max-width: 991px) {
+      &__master-madia {
+        position: relative;
+        top: 0;
+        padding: 0 !important;
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 991px) {
+    .textBackground {
+      background-color: $color-secondary-24;
+      height: 667px;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .videoSection-sub {
+    position: relative;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 991px) {
+  .videoSection {
+    height: auto;
+  }
+}
+
+// @media (min-width: 992px) and (max-width: 1440px) {
+//   &__hero {
+//     height: 581px;
+//   }
+// }
+// @media (min-width: 375px) and (max-width: 991px) {}

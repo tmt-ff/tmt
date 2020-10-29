@@ -1,0 +1,30 @@
+<div class="video-section">
+  <video
+    controls
+    controlsList=" nodownload"
+    poster="../../assets/images/Group 346.png"
+    preload="metadata"
+    class="video"
+    #videoPlayer
+  >
+    <source
+      src="https://s3.eu-central-1.amazonaws.com/pipe.public.content/short.mp4"
+      type='video/mp4;codecs="avc1.4D401E, mp4a.40.2"'
+    />
+    <source
+      src="../../assets/videos/video1.mp4"
+      type='video/mp4;codecs="avc1.4D401E, mp4a.40.2"'
+    />
+
+    Sorry, your browser doesn't support embedded videos.
+  </video>
+
+  <!-- <img class="play-icon" src="../../assets/icons/play.svg" /> -->
+  <!-- <img class="pause-icon" src="../../assets/icons/pauseIcon.svg"
+  /> -->
+  <a class="" (click)="pause_playVid()"
+    ><img class="play-icon" src="../../assets/icons/play.svg"
+  /></a>
+</div>
+
+<!-- -->

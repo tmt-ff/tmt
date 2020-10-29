@@ -1,0 +1,178 @@
+$sbfontLight: "OpenSans-Light"; // HelveticaNeue-Regular
+$sbfontRegular: "OpenSansRegular";
+$sbfontSemiBold: "OpenSans-Semi-Bold";
+$sbfontBold: "OpenSansBold";
+$sbLightItalic: "OpenSansItalic";
+$h1: (
+  font-family: $sbfontBold,
+  font-style: normal,
+  "desktop": (
+    font-size: 60px,
+    line-height: 1,
+    letter-spacing: normal,
+    font-weight: bold,
+  ),
+  "tablet": (
+    font-size: 50px,
+    line-height: 1.1,
+    //fix style guide
+      letter-spacing: normal,
+    font-weight: bold,
+  ),
+  "mobile": (
+    font-size: 26px,
+    line-height: 1.25,
+    letter-spacing: normal,
+    font-weight: bold,
+  ),
+);
+
+$h2: (
+  font-family: $sbfontSemiBold,
+  font-style: normal,
+  font-weight: 600,
+  font-stretch: normal,
+  "desktop": (
+    font-size: 48px,
+    line-height: 1,
+    letter-spacing: normal,
+  ),
+  "tablet": (
+    font-size: 48px,
+    line-height: 1,
+    letter-spacing: normal,
+  ),
+  "mobile": (
+    font-size: 30px,
+    line-height: 1.03,
+    letter-spacing: normal,
+  ),
+);
+
+$h3: (
+  font-family: $sbfontRegular,
+  font-style: normal,
+  font-weight: normal,
+  font-stretch: normal,
+  "desktop": (
+    font-size: 48px,
+    line-height: 1,
+    letter-spacing: 4px,
+  ),
+  "tablet": (
+    font-size: 35px,
+    line-height: 1,
+    letter-spacing: 4px,
+  ),
+  "mobile": (
+    font-size: 25px,
+    line-height: 1.13,
+    letter-spacing: 2.4px,
+  ),
+);
+
+$h4: (
+  font-family: $sbfontSemiBold,
+  font-style: normal,
+  font-weight: 600,
+  font-stretch: normal,
+  "desktop": (
+    font-size: 26px,
+    line-height: 1,
+    letter-spacing: normal,
+  ),
+  "tablet": (
+    font-size: 22px,
+    line-height: 1,
+    letter-spacing: normal,
+  ),
+  "mobile": (
+    font-size: 18px,
+    line-height: 1.13,
+    letter-spacing: normal,
+  ),
+);
+
+$h5: (
+  font-family: $sbfontRegular,
+  font-style: normal,
+  font-weight: normal,
+  //   line-height: 33px,
+    font-stretch: normal,
+  letter-spacing: normal,
+  "desktop": (
+    font-size: 24px,
+    line-height: 1.2,
+  ),
+  "tablet": (
+    font-size: 24px,
+    line-height: 1.2,
+  ),
+  "mobile": (
+    font-size: 18px,
+    line-height: 1.14,
+  ),
+);
+
+$h6: (
+  font-family: $sbfontBold,
+  font-style: normal,
+  font-weight: bold,
+  //   line-height: 22px,
+    font-stretch: normal,
+  letter-spacing: normal,
+  "desktop": (
+    font-size: 16px,
+    line-height: 1.2,
+  ),
+  "tablet": (
+    font-size: 14px,
+    line-height: 1.22,
+  ),
+  "mobile": (
+    font-size: 12px,
+    line-height: 1.17,
+  ),
+);
+
+$h7: (
+  font-family: $sbfontRegular,
+  font-style: normal,
+  font-weight: 600,
+  //   line-height: 19px,
+    font-stretch: normal,
+  letter-spacing: normal,
+  "desktop": (
+    font-size: 14px,
+    line-height: 1.2,
+  ),
+  "tablet": (
+    font-size: 14px,
+    line-height: 1.2,
+  ),
+  "mobile": (
+    font-size: 14px,
+    line-height: 1.33,
+  ),
+);
+
+$h8: (
+  font-family: $sbfontLight,
+  font-style: normal,
+  font-weight: 300,
+  //   line-height: 16px,
+    font-stretch: normal,
+  letter-spacing: normal,
+  "desktop": (
+    font-size: 12px,
+    line-height: 1.2,
+  ),
+  "tablet": (
+    font-size: 12px,
+    line-height: 1.2,
+  ),
+  "mobile": (
+    font-size: 12px,
+    line-height: 1.2,
+  ),
+);

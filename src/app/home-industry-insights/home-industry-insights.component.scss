@@ -1,0 +1,136 @@
+@import "../../assets/scss/common";
+
+.jumbotron {
+}
+
+.hometmtinsight {
+  background-image: url("../../assets/images/Golden.png");
+  background-size: auto !important;
+  background-repeat: no-repeat;
+  background-position: left;
+  // display: block;
+  height: 961px;
+  // background-size: cover !important;
+  &__text {
+    z-index: 1;
+    position: absolute;
+    // right: 9.17%;
+    display: block;
+    margin-top: 10%;
+    right: 0;
+    &__floatRight {
+      height: 40%;
+      float: right !important;
+    }
+  }
+
+  &__title {
+    @include sbfont($h1, $color-secondary-9);
+    // font-size: 60px;
+  }
+
+  &__desc {
+    @include sbfont($h5, $color-secondary-9);
+    padding-top: 10px;
+  }
+  &__home-buttons {
+    padding-top: 29px;
+    margin-bottom: 97px;
+  }
+  @media (min-width: 375px) and (max-width: 991px) {
+    &__text {
+      left: 1.94%;
+      padding-left: 7%;
+      padding-right: 7%;
+    }
+    &__title {
+      @include sbfont($h1, $white);
+      text-align: center;
+    }
+
+    &__desc {
+      @include sbfont($h5, $white);
+      text-align: center;
+    }
+    &__home-buttons {
+      text-align: center;
+    }
+  }
+
+  &__subcribeBtn {
+    @include sbfont($h8, $color-secondary-8);
+    margin-left: 10px;
+  }
+
+  .arrowIcon {
+    margin-inline-start: 15px;
+  }
+
+  input[type="email"],
+  select.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 0.5px solid #0d0f0e;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    width: 283px;
+  }
+
+  .form-control {
+    padding: 0 !important;
+  }
+
+  input[type="email"]:focus,
+  select.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: blue($color: #12abe7);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 2560px) {
+  .hometmtinsight:after {
+    position: relative;
+    content: " ";
+    left: 0;
+    width: 100%;
+    // height: 935px;
+    z-index: 0;
+    background: linear-gradient(
+      270deg,
+      #ffffff 63.58%,
+      rgba(255, 255, 255, 0) 82.29%
+    );
+  }
+}
+@media (min-width: 375px) and (max-width: 991px) {
+  .hometmtinsight {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    // display: block;
+    overflow: auto;
+    height: 651px;
+  }
+
+  .hometmtinsight:after {
+    position: relative;
+    content: " ";
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    background: $black;
+    opacity: 0.75;
+  }
+}
+
+// .arrow {
+//   border: 2px solid #5f8a09;
+//   box-sizing: border-box;
+// }
+svg {
+  fill: $color-secondary-8;
+  stroke: $color-secondary-8;
+  margin-left: 10px;
+}

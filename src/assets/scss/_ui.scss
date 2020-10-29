@@ -1,0 +1,130 @@
+@import "colors";
+.primaryBtn {
+  background-color: $color-secondary-8; /* Green */
+  border: none;
+  // color: $color-secondary-10;
+  padding: 15px 16.5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  //   width: 215px;
+  cursor: pointer;
+  @include sbfont($h7, $color-secondary-10);
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.15);
+}
+
+// @include media-breakpoint-between(xs, sm) {
+//   .primaryBtn {
+//     @include button-size(
+//       $input-btn-padding-y-sm,
+//       $input-btn-padding-x-sm,
+//       $font-size-sm,
+//       $line-height-sm,
+//       $btn-border-radius-sm
+//     );
+//   }
+// }
+
+.secondaryBtn {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  @include sbfont($h7, $color-secondary-10);
+  padding: 15px 66.5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  //   width: 215px;
+  cursor: pointer;
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.15);
+  border: 2px solid $white;
+  box-sizing: border-box;
+}
+
+.tertiaryBtn {
+  background-color: $color-secondary-1; /* Green */
+  border: none;
+  @include sbfont($h7, $color-secondary-10);
+  padding: 15px 24.5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  //   width: 215px;
+  cursor: pointer;
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.15);
+}
+
+.subcribeBtn {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  // color: $color-secondary-8;
+  @include sbfont($h5, $color-secondary-8);
+
+  //   padding: 21px 50.5px;
+  text-align: center;
+  // display: inline-block;
+  //   width: 215px;
+  font-size: 18px !important;
+  cursor: pointer;
+}
+
+.viewSolBtn {
+  background-color: $white; /* Green */
+  border: none;
+  // color: $color-secondary-10;
+  padding: 15px 15.5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  width: 100% !important;
+  cursor: pointer;
+  @include sbfont($h7, $color-secondary-8);
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.15);
+}
+.primaryBtn:hover {
+  background-color: $color-secondary-2; /* Green */
+  color: $color-secondary-10;
+}
+
+.secondaryBtn:hover {
+  background-color: $white; /* Green */
+  color: $color-secondary-2;
+}
+
+.tertiaryBtn:hover {
+  background-color: $color-secondary-11; /* Green */
+  color: $color-secondary-10;
+}
+
+.subcribeBtn:hover {
+  color: $color-secondary-2;
+}
+
+.viewSolution {
+  height: 86px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  background: $white;
+  border-bottom: 1px solid $color-primary-3;
+
+  &__text {
+    vertical-align: middle;
+    padding: 30px 0px 20px 0px;
+  }
+  &__view {
+    @include sbfont($h7, $color-primary-4);
+  }
+  &__goto {
+    @include sbfont($h7, $color-secondary-25);
+    font-weight: bold !important;
+  }
+  // &__arrowImg {
+  // }
+}
+
+.subcribe {
+  background: $color-secondary-16;
+  height: 140px;
+}
