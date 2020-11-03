@@ -7,25 +7,16 @@
     class="carousel slide carousel-multi-item"
     data-ride="carousel"
   >
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-      <li
-        data-target="#carouselIndicators"
-        data-slide-to="0"
-        class="active"
-      ></li>
-      <li data-target="#carouselIndicators" data-slide-to="1"></li>
-    </ol>
-    <!--/.Indicators-->
     <!--Slides-->
     <div class="carousel-inner" role="listbox">
       <!--First slide-->
-      <div *ngFor="let slide of slideListMaster" class="carousel-item active">
-        <div *ngFor="let slideCard of slide" class="col-lg-3 col-md-3" style="float: left;">
-          <div class="card mb-2">
+      <div class="carousel-item active">
+        <div *ngFor="let slideCard of slideList" class="row col-lg-2 col-md-3 p-1" style="float: left; max-width: 168px;">
+          <div routerLink="{{ slideCard.routerLink }}"
+               routerLinkActive="solutionLinkActive" class="card mb-2">
             <img
               class="card-img-top"
-              src="../../assets/images/image1.jpg"
+              src="{{slideCard.image}}"
               alt="Card image cap"
             />
             <div class="card-body">
@@ -33,7 +24,7 @@
               <p class="card-text text-center">
                 {{slideCard.description}}
               </p>
-              <a href="../html-link.htm" class="homeoursolution__ciclearrow"
+              <a href="javascript: return false" routerLink="{{ slideCard.routerLink }}" class="homeoursolution__ciclearrow"
               ><img src="../../assets/icons/circleArrow.svg" alt="..."
               /></a>
             </div>
@@ -44,29 +35,7 @@
       <!--/.Second slide-->
     </div>
     <!--/.Slides-->
-
-    <!--Controls-->
-
-    <a
-      class="carousel-control-prev"
-      href="#carouselIndicators"
-      role="button"
-      data-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a
-      class="carousel-control-next"
-      href="#carouselIndicators"
-      role="button"
-      data-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-    <!--/.Controls-->
   </div>
   <!--/.Carousel Wrapper-->
 </div>
-</div>
+

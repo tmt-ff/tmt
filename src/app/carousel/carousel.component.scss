@@ -84,12 +84,23 @@
 }
 
 .card-body {
-  background: #030616;
+  background: linear-gradient(to top, rgba(255,0,0,0), $color-primary-1);
 }
 
 .card {
   width: 100% !important;
   height: auto !important;
+  border: none;
+  background: transparent;
+  border-bottom: none;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+.solutionLinkActive.card {
+  border: 1px solid $color-secondary-7;
 }
 .card-title {
   @include sbfont($h6, $color-secondary-21);
@@ -101,10 +112,14 @@
 
 // for Solutions slider
 .sliderWrapper {
-  width: 830px;
   position: relative;
-  top: -94px;
+  top: -197px;
   z-index: 1;
   height: 0px;
   float: right;
+  width: 100%;
+}
+
+.carouselMain {
+  background: rgba(0,0,0,0.3);
 }

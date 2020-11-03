@@ -4,18 +4,18 @@ import {
   ViewChild,
   ElementRef,
   HostListener,
-} from "@angular/core";
-import * as $ from "jquery";
-import { Router } from "@angular/router";
-import { Location } from "@angular/common";
+} from '@angular/core';
+import * as $ from 'jquery';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
-  selector: "app-header",
-  templateUrl: "./header.component.html",
-  styleUrls: ["./header.component.scss"],
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  @ViewChild("stickyMenu", { static: true }) menuElement: ElementRef;
+  @ViewChild('stickyMenu', { static: true }) menuElement: ElementRef;
 
   menuPosition: any;
   isActive: boolean;
@@ -28,16 +28,16 @@ export class HeaderComponent implements OnInit {
     this.router.events.subscribe((val) => {
       // console.log("Link Link Link==========" + this.location.path(), val);
       this.url = this.location.path();
-      if (this.location.path() != "") {
+      if (this.location.path() != '') {
         this.route = this.location.path();
-        if (this.route.includes("solutions")) {
+        if (this.route.includes('solutions')) {
           this.isActive = true;
         } else {
           this.isActive = false;
         }
-        console.log("Link Link Link++++ " + this.url);
+        console.log('Link Link Link++++ ' + this.url);
       } else {
-        this.route = "Home";
+        this.route = 'Home';
       }
     });
   }

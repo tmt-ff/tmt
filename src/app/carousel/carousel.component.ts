@@ -10,33 +10,40 @@ import {Location} from '@angular/common';
   providers: [NgbCarouselConfig, NgbCarousel],
 })
 export class CarouselComponent implements OnInit {
-  isActive = false;
+  private isActive = false;
   @Input() slideNumber: number;
   slideList = [{
+    routerLink : '/solutions/vpop',
     name: 'V-Pop',
     image: '../../assets/images/image1.jpg',
     description: 'Some quick example text to build on the card title'
   }, {
+    routerLink : '/solutions/botdna',
     name: 'BOT DnA',
-    image: '../../assets/images/image1.jpg',
+    image: '../../assets/images/image3.jpg',
     description: 'Some quick example text to build on the card title'
   }, {
+    routerLink : '/solutions/channel',
     name: 'Omni-Channel Ecosystem',
     image: '../../assets/images/image1.jpg',
     description: 'Some quick example text to build on the card title'
   }, {
+    routerLink : '/solutions/smartcapex',
     name: 'Smart CAPEX',
     image: '../../assets/images/image3.jpg',
     description: 'Some quick example text to build on the card title'
   }, {
+    routerLink : '/solutions/cyper_security',
     name: 'Cyber Security',
     image: '../../assets/images/image3.jpg',
     description: 'Some quick example text to build on the card title'
   }, {
+    routerLink : '/solutions/aona',
     name: 'AONA',
     image: '../../assets/images/image1.jpg',
     description: 'Some quick example text to build on the card title'
   }, {
+    routerLink : '/solutions/api',
     name: 'API',
     image: '../../assets/images/image3.jpg',
     description: 'Some quick example text to build on the card title'
