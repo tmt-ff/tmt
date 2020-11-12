@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CyperSecurityComponent } from './cyper-security.component';
+import { CyberSecurityComponent } from './cyber-security.component';
 
-describe('CyperSecurityComponent', () => {
-  let component: CyperSecurityComponent;
-  let fixture: ComponentFixture<CyperSecurityComponent>;
+describe('CyberSecurityComponent', () => {
+  let component: CyberSecurityComponent;
+  let fixture: ComponentFixture<CyberSecurityComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CyperSecurityComponent ]
+      declarations: [ CyberSecurityComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CyperSecurityComponent);
+    fixture = TestBed.createComponent(CyberSecurityComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

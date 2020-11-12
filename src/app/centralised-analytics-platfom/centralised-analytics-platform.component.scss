@@ -1,8 +1,8 @@
 @import "../../assets/scss/common";
 
-.cyper {
+.centralised {
   &__hero {
-    background-image: url("../../assets/images/cyper1.jpg");
+    background-image: url("../../assets/images/vpop.jpg");
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: center center !important;
@@ -10,6 +10,7 @@
     -webkit-background-size: 100%;
     -moz-background-size: cover;
     -o-background-size: cover;
+
     height: calc(100vh);
     top: 0;
     left: 0;
@@ -27,7 +28,6 @@
       }
     }
   }
-
   @media (min-width: 375px) and (max-width: 992px) {
     &__hero {
       height: 581px;
@@ -41,7 +41,7 @@
       #fdfdfd 36.7%,
       rgba(249, 249, 249, 0) 87.77%
     );
-    height: 812px;
+    height: auto;
 
     &__leftImage {
       position: relative;
@@ -82,6 +82,9 @@
     // width: 60%;
     margin: auto;
 
+    &__list-header {
+      @include sbfont($h5, $black);
+    }
     &__list {
       @include sbfont($h5, $color-secondary-5);
     }
@@ -111,19 +114,16 @@
   padding-top: 7%;
   padding-bottom: 7%;
   height: auto;
-  padding-top: 7%;
-  padding-bottom: 7%;
   z-index: 0 !important;
   background-color: $white;
   .textBackground {
-    height: 513px;
+    height: auto;
     width: 87%;
     margin: 198px 120px auto 46px;
 
     // z-index: 1 !important;
     position: absolute;
     .textArea {
-      z-index: 1 !important;
       position: absolute;
       margin-top: 5%;
       width: 40%;

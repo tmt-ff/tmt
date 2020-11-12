@@ -14,6 +14,9 @@ export class SolutionsComponent implements OnInit {
     "Omni-Channel Ecosystem",
     "Smart CAPEX",
     "Cyber Security ",
+    "Smart Contact Centres ",
+    "Centralised Analytics Platform ",
+    "Model Guardian ",
     "AON"
   ];
   constructor(private router: Router) {}

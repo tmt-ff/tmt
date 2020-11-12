@@ -47,6 +47,22 @@ export class CarouselComponent implements OnInit {
     name: 'API',
     image: '../../assets/images/image3.jpg',
     description: 'Some quick example text to build on the card title'
+  }, {
+    routerLink : '/solutions/smart_contact_centres',
+    name: 'Smart Contact Centres',
+    image: '../../assets/images/image3.jpg',
+    description: 'Some quick example text to build on the card title'
+  }, {
+    routerLink : '/solutions/centralised_analytics_platform',
+    name: 'Centralised Analytics Platform',
+    image: '../../assets/images/image1.jpg',
+    description: 'Some quick example text to build on the card title'
+  }, {
+    routerLink : '/solutions/model_guardian ',
+    name: 'Model Guardian',
+    image: '../../assets/images/image3.jpg',
+    description: 'Some quick example text to build on the card title'
+
   }];
 
   @Input() description: boolean;

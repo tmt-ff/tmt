@@ -9,10 +9,13 @@ import { SolutionsComponent } from './solutions/solutions.component';
 import { VPopComponent } from './v-pop/v-pop.component';
 import { SmartCapexComponent } from './smart-capex/smart-capex.component';
 import { OmniChannelEcosystemComponent } from './omni-channel-ecosystem/omni-channel-ecosystem.component';
-import { CyperSecurityComponent } from './cyper-security/cyper-security.component';
+import { CyberSecurityComponent } from './cyber-security/cyber-security.component';
 import { BotDnaComponent } from './bot-dna/bot-dna.component';
 import { ApiComponent } from './api/api.component';
 import { AonaComponent } from './aona/aona.component';
+import { SmartContactCentresComponent } from './smart-contact-centres/smart-contact-centres.component';
+import { CentralisedAnalyticsPlatformComponent } from './centralised-analytics-platfom/centralised-analytics-platform.component';
+import { ModelGuardianComponent } from './model-guardian/model-guardian.component';
 import { MobiBookingFormComponent } from './mobi-booking-form/mobi-booking-form.component';
 // For MDB Angular Pro
 // import { CarouselModule, WavesModule } from 'ng-uikit-pro-standard'
@@ -44,7 +47,7 @@ const routes: Routes = [
       },
       {
         path: 'cyper_security',
-        component: CyperSecurityComponent,
+        component: CyberSecurityComponent,
       },
       {
         path: 'botdna',
@@ -57,6 +60,18 @@ const routes: Routes = [
       {
         path: 'aona',
         component: AonaComponent,
+      },
+      {
+        path: 'smart_contact_centres',
+        component: SmartContactCentresComponent,
+      },
+      {
+        path: 'centralised_analytics_platform',
+        component: CentralisedAnalyticsPlatformComponent,
+      },
+      {
+        path: 'model_guardian',
+        component: ModelGuardianComponent,
       },
     ],
   },

@@ -27,7 +27,10 @@ import { BotDnaComponent } from './bot-dna/bot-dna.component';
 import { OmniChannelEcosystemComponent } from './omni-channel-ecosystem/omni-channel-ecosystem.component';
 import { SmartCapexComponent } from './smart-capex/smart-capex.component';
 import { AonaComponent } from './aona/aona.component';
-import { CyperSecurityComponent } from './cyper-security/cyper-security.component';
+import { CyberSecurityComponent } from './cyber-security/cyber-security.component';
+import { SmartContactCentresComponent } from './smart-contact-centres/smart-contact-centres.component';
+import { CentralisedAnalyticsPlatformComponent } from './centralised-analytics-platfom/centralised-analytics-platform.component';
+import { ModelGuardianComponent } from './model-guardian/model-guardian.component';
 import { MasterMediaComponent } from './master-media/master-media.component';
 import { ModalComponent } from './modal/modal.component';
 import { MobiBookingFormComponent } from './mobi-booking-form/mobi-booking-form.component';
@@ -56,7 +59,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     OmniChannelEcosystemComponent,
     SmartCapexComponent,
     AonaComponent,
-    CyperSecurityComponent,
+    CyberSecurityComponent,
+    SmartContactCentresComponent,
+    CentralisedAnalyticsPlatformComponent,
+    ModelGuardianComponent,
     MasterMediaComponent,
     ModalComponent,
     MobiBookingFormComponent,
